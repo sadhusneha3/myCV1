@@ -1,0 +1,15 @@
+<div class="portfolio-header">
+    <h1 class="title">MY PORTFOLIO</h1>
+</div>
+
+<!-- Main content -->
+<div class="portfolio-container">
+    <h1 class="name">Sneha Sadhu</h1>
+    <h4 class="role">Software Developer</h4>
+    <!-- <img src="assets/profile.jpg" alt="Sneha Sadhu" class="profile-pic" /> -->
+
+    <div class="nav-buttons">
+        <button *ngFor="let section of navitems" (click)=routepage(section.url)>
+            {{ section.title }}
+        </button>
+    </div>

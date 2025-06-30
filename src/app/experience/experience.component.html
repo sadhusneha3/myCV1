@@ -1,0 +1,55 @@
+<div class="experience-container">
+    <h2>Experience</h2>
+
+    <div class="experience-tabs">
+        <button *ngFor="let tab of experienceTabs" [ngClass]="{ active: activeExperienceTab === tab.key }"
+            (click)="selectExperienceTab(tab.key)">
+            {{ tab.label }}
+        </button>
+    </div>
+
+    <div class="experience-content">
+        <div *ngIf="activeExperienceTab === 'internship'">
+            <h4>Frontend Developer Intern</h4>
+            <p><strong>Ardent</strong> – Dec 2021 to Jan 2022</p>
+            <p>Built a Pizza Ordering Website on Local Server.</p>
+
+            <h4>Web Designing Intern</h4>
+            <p><strong>Internshala GEMA</strong> – May 2024 to August 2024</p>
+            <p>Created and managed a website on WordPress, uploaded and customized the theme.</p>
+
+            <h4>Web Developer Intern</h4>
+            <p><strong>AspireNex</strong> – July 2024 to Sep 2024</p>
+            <p>Developed dynamic, responsive interfaces with HTML, CSS, JavaScript, and UI/UX principles.</p>
+            <ul>
+                <li>Developed a Calculator emulating core math functionalities.</li>
+                <li>Built a user-friendly Weather App using a reliable weather API.</li>
+                <li>Created a Spotify-like music app page for portfolio practice.</li>
+            </ul>
+        </div>
+
+        <div *ngIf="activeExperienceTab === 'certificate'">
+            <h4>Certificates</h4>
+            <ul>
+                <li>
+                    <a href="https://drive.google.com/your-certificate-link" target="_blank">
+                        C for Everyone: Structured Programming
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/your-certificate-link" target="_blank">
+                        Raspberry Pi Platform and Python Programming
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div *ngIf="activeExperienceTab === 'course'">
+            <h4>Courses</h4>
+            <ul>
+                <li>Full Stack Developer Bootcamp – GeeksForGeeks (6 months)</li>
+                <li>Machine Learning Basics – Udemy (3 months)</li>
+            </ul>
+        </div>
+    </div>
+</div>

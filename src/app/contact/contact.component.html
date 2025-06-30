@@ -1,0 +1,32 @@
+<section class="contact-section">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> 8927316141</p>
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:{{ gmail }}">{{ gmail }}</a>
+    </p>
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/snehasadhu03" target="_blank">
+            linkedin.com/in/snehasadhu03
+        </a>
+    </p>
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/sadhusneha3" target="_blank">
+            github.com/sadhusneha3
+        </a>
+    </p>
+    <p>
+        <strong>Twitter:</strong>
+        <a href="https://twitter.com/SSadhu97928" target="_blank">
+            twitter.com/SSadhu97928
+        </a>
+    </p>
+    <form class="contact-form" (ngSubmit)="sendMessage()">
+        <input type="text" name="name" [(ngModel)]="name" placeholder="Your Name" required />
+        <input type="email" name="email" [(ngModel)]="email" placeholder="Your Email" required />
+        <textarea name="message" [(ngModel)]="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>

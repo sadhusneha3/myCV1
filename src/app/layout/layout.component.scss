@@ -1,0 +1,25 @@
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+app-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}

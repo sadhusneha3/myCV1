@@ -1,0 +1,73 @@
+.education-page {
+    text-align: center;
+    // padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fdfdfd, #e8f0fe);
+
+    h2,
+    h3 {
+        color: #1a237e;
+        margin-bottom: 1rem;
+    }
+
+    .vertical {
+        margin: 1rem 0;
+    }
+
+    .vertical-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .vertical-desc {
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+    .vertical-marks {
+        font-size: 1rem;
+        color: #0b0b0b;
+        margin-top: 0.3rem;
+        font-weight: 500;
+    }
+
+
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+        width: 50%;
+        margin-inline: auto;
+    }
+
+    .higher-education {
+        margin-top: 2rem;
+        background: #ffffff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .college-details {
+            margin-top: 1rem;
+
+            h2 {
+                font-size: 1.2rem;
+                color: #333;
+            }
+
+            h3,
+            h4 {
+                color: #555;
+                margin: 0.3rem 0;
+            }
+        }
+    }
+}
